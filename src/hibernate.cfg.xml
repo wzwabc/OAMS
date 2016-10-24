@@ -1,0 +1,32 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory >
+		<property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+
+    	<property name="connection.username">sa</property>
+
+    	<property name="connection.password">123</property>
+
+    	<property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+       
+		<property name="connection.url">jdbc:sqlserver://127.0.0.1:1433;database=db_work</property>
+		
+		<mapping resource="com/hiernate/persistence/User.hbm.xml"/>
+		<mapping resource="com/hiernate/persistence/Menu.hbm.xml"/>
+		<mapping resource="com/hiernate/persistence/Meeting.hbm.xml"/>
+		<mapping resource="com/hiernate/persistence/Placard.hbm.xml"/>
+		<mapping resource="com/hiernate/persistence/Waichu.hbm.xml"/>
+		<mapping resource="com/hiernate/persistence/Qingjia.hbm.xml"/>
+		<mapping resource="com/hiernate/persistence/Chuchai.hbm.xml"/>
+		<mapping resource="com/hiernate/persistence/Onduty.hbm.xml"/>
+		<mapping resource="com/hiernate/persistence/Qiye.hbm.xml"/>
+		<mapping resource="com/hiernate/persistence/Bm.hbm.xml"/>
+		<mapping resource="com/hiernate/persistence/Person.hbm.xml"/>
+		<mapping resource="com/hiernate/persistence/Shenhe.hbm.xml"/>
+		<mapping resource="com/hiernate/persistence/TongXunAdd.hbm.xml"/>
+		<mapping resource="com/hiernate/persistence/Tongxun.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>
